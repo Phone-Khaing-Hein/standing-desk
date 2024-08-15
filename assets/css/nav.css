@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color-primary: #222831;
+  --color-secondary: #31363f;
+  --color-tertiary: #76abae;
+  --color-quaternary: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+}
+
+.logo > a {
+  color: var(--color-quaternary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar {
+  align-items: center;
+  background: var(--color-secondary);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  padding: 30px 100px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.push-left {
+  margin-left: auto;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  z-index: 1001;
+  position: relative;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #f2f5f7;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover .hamburger-line {
+  background-color: var(--color-tertiary);
+}
+
+.menu-active .hamburger-line-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-active .hamburger-line-middle {
+  opacity: 0;
+}
+
+.menu-active .hamburger-line-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Show hamburger on small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+    position: static;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    background: var(--color-secondary);
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-100%);
+    text-align: center;
+    transition: all 0.25s ease-in;
+  }
+
+  .menu-active .nav-menu {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-menu .menu-item a {
+    font-size: 20px;
+    margin: 8px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.menu-item a {
+  color: var(--color-quaternary);
+  display: block;
+  line-height: 30px;
+  margin: 0px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: var(--color-tertiary);
+}
+
+.current-menu-item a {
+  color: var(--color-tertiary);
+}
+
+.sub-nav {
+  border: 1px solid #ccc;
+  position: absolute;
+  background-color: var(--color-secondary);
+  padding: 5px 5px;
+  list-style: none;
+  width: 230px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-nav {
+    position: relative;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+/* Display Sub-menu on hover */
+.menu-item:hover .sub-nav,
+.sub-nav:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: ease-in-out 0.3s;
+  display: block;
+}
+
+.dropdown .active {
+  color: var(--color-tertiary);
+}
+
+.cart-group {
+  position: relative;
+}
+
+.cart-icon {
+  color: var(--color-quaternary);
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.item-count {
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: var(--color-quaternary);
+}
+
+.cart-icon:hover {
+  color: var(--color-tertiary);
+}

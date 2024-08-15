@@ -1,0 +1,59 @@
+#healthBenefits {
+  padding: 2rem;
+  margin-top: 150px;
+}
+
+#healthBenefits h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-quaternary);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefit-item {
+  background: var(--color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 10px solid var(--color-tertiary);
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: var(--color-quaternary);
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: var(--color-quaternary);
+}
+
+.video-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+}
