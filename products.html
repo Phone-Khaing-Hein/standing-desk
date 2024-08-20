@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standing Desks | Products</title>
-    <link rel="stylesheet" href="./assets/css/nav.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    >
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="#" class="nav__link">Standing Desk</a>
+          <a href="index.html" class="nav__link">Standing Desk</a>
         </div>
         <div class="push-left">
-          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+          <div id="menu-toggler" data-class="menu-active" class="hamburger">
             <div class="hamburger-line hamburger-line-top"></div>
             <div class="hamburger-line hamburger-line-middle"></div>
             <div class="hamburger-line hamburger-line-bottom"></div>
-          </button>
+          </div>
 
           <!--  Menu compatible with wp_nav_menu  -->
           <ul id="primary-menu" class="menu nav-menu">
@@ -61,22 +61,50 @@
             </li>
           </ul>
         </div>
+        <div class="cart-group">
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping cart-icon"></i
+          ></a>
+          <div class="item-count"></div>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="search">
+      <div id="search">
         <input
           type="text"
           class="product-search"
           id="productSearch"
           placeholder="Search Everything you want"
-        />
-      </section>
-      <section id="productCards"></section>
+        >
+      </div>
+      <div id="productCards"></div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#footer">Privacy Policy</a></li>
+            <li><a href="#footer">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          PKH Copyright © 2024 PKH - All rights reserved || Designed By: Phone
+          Khaing Hein
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/nav.js"></script>
-    <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/products.js"></script>
   </body>
 </html>

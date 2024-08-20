@@ -14,6 +14,10 @@
   align-items: start;
   gap: 20px;
   width: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .flex-column-container label,
@@ -28,6 +32,11 @@
   align-items: start;
   gap: 20px;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 #contactUs h3,
@@ -37,7 +46,7 @@
 }
 
 .contact-form {
-  width: 800px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -78,7 +87,7 @@
 }
 
 .accordion {
-  width: 800px;
+  width: 70%;
   margin: 0 auto;
 }
 

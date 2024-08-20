@@ -13,10 +13,12 @@
   font-size: 1rem;
   margin-top: 90px;
   background-color: var(--color-quaternary);
-}
 
-#search input:focus {
-  outline: none;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    width: 350px;
+    padding: 20px;
+  }
 }
 
 #productCards {

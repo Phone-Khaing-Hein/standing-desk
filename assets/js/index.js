@@ -34,3 +34,37 @@ interval = setInterval(moveToNextImage, intervalTime);
 
 nextButton.addEventListener("click", moveToNextImage);
 prevButton.addEventListener("click", moveToPrevImage);
+
+localStorage.setItem("deskType", "standing");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const discountModal = document.getElementById("discount-modal");
+  const closeModal = document.querySelector(".close");
+  const applyCodeButton = document.querySelector(".apply-code");
+
+  // Check if the current page is the home page
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    discountModal.style.display = "block";
+  }
+
+  // Close the modal when the user clicks the "x" button
+  closeModal.addEventListener("click", () => {
+    discountModal.style.display = "none";
+  });
+
+  // Close the modal when the user clicks anywhere outside of it
+  window.addEventListener("click", (event) => {
+    if (event.target === discountModal) {
+      discountModal.style.display = "none";
+    }
+  });
+
+  // Apply the discount code when the button is clicked
+  applyCodeButton.addEventListener("click", () => {
+    discountModal.style.display = "none";
+    alert("Discount code applied! Use PKH26 at checkout.");
+  });
+});

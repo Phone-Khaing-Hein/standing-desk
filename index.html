@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standing Desk | Home</title>
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="#" class="nav__link">Standing Desk</a>
+          <a href="index.html" class="nav__link">Standing Desk</a>
         </div>
         <div class="push-left">
-          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+          <div id="menu-toggler" data-class="menu-active" class="hamburger">
             <div class="hamburger-line hamburger-line-top"></div>
             <div class="hamburger-line hamburger-line-middle"></div>
             <div class="hamburger-line hamburger-line-bottom"></div>
-          </button>
+          </div>
 
           <!--  Menu compatible with wp_nav_menu  -->
           <ul id="primary-menu" class="menu nav-menu">
@@ -37,6 +37,10 @@
             <li class="menu-item"><a class="nav__link" href="contact-us.html">Contact Us</a></li>
             <li class="menu-item"><a class="nav__link" href="health-benefits.html">Health Benefits</a></li>
           </ul>
+        </div>
+        <div class="cart-group">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+          <div class="item-count">1</div>
         </div>
       </nav>
     </header>
@@ -83,49 +87,44 @@
         </div>
         <div class="prev">&#10094;</div>
         <div class="next">&#10095;</div>
-      </div>
+      </section>
       <section id="products">
         <h3 class="product-title">Best Selling Products</h3>
         <div class="flex-container">
           <div class="product-list">
             <div class="product-card">
-              <img src="./assets/images/standing-desk-1.jpg" alt="desk1" />
-              <h4>Standing Desk 1</h4>
-              <p>$200</p>
-              <button class="btn">Add to Cart</button>
+              <img src="./assets/images/standing-desk-1.jpg" alt="desk1">
+              <h4>Shaped Standing Desk, 3-Leg</h4>
+              <p>$1149</p>
             </div>
             <div class="product-card">
-              <img src="./assets/images/standing-desk-2.jpg" alt="desk1" />
-              <h4>Standing Desk 2</h4>
-              <p>$400</p>
-              <button class="btn">Add to Cart</button>
+              <img src="./assets/images/standing-desk-2.jpg" alt="desk1">
+              <h4>Degree Standing Desk</h4>
+              <p>$999</p>
             </div>
             <div class="product-card">
-              <img src="./assets/images/standing-desk-3.jpg" alt="desk1" />
-              <h4>Standing Desk 3</h4>
-              <p>$600</p>
-              <button class="btn">Add to Cart</button>
+              <img src="./assets/images/standing-desk-3.jpg" alt="desk1">
+              <h4>Pneumatic Standing Desk</h4>
+              <p>$599</p>
             </div>
             <div class="product-card">
-              <img src="./assets/images/standing-desk-4.jpg" alt="desk1" />
-              <h4>Standing Desk 4</h4>
-              <p>$800</p>
-              <button class="btn">Add to Cart</button>
+              <img src="./assets/images/standing-desk-4.jpg" alt="desk1">
+              <h4>Height Adjustable Bistro Desk</h4>
+              <p>$399</p>
             </div>
             <div class="product-card">
-              <img src="./assets/images/standing-desk-5.jpg" alt="desk1" />
-              <h4>Standing Desk 4</h4>
-              <p>$800</p>
-              <button class="btn">Add to Cart</button>
+              <img src="./assets/images/standing-desk-8.jpg" alt="desk1">
+              <h4>Standing Desk, 4-Leg</h4>
+              <p>$1209</p>
             </div>
           </div>
-          <div class="view-all">&#10095;</div>
+          <a class="view-all" href="products.html">&#10095;</a>
         </div>
       </section>
       <section id="benefits">
         <h3 class="product-title">Discover the Benefits of a Standing Desk</h3>
         <div class="benefit-detail">
-          <img src="./assets/images/landing-image-1.png" alt="desk1"/>
+          <img src="./assets/images/landing-image-1.png" alt="desk1">
           <p>
             Elevate your workday with a standing desk. Improve posture, reduce back pain, and boost circulation for increased energy and productivity. Whether at home or in the office, a standing desk keeps you active, focused, and engaged. Balance comfort and efficiency—stand for your well-being and productivity.
           </p>
@@ -134,7 +133,7 @@
           <p>
             Standing desks burn more calories, boost mood and energy, and enhance focus. They lower the risk of chronic diseases and foster collaboration while offering adjustable heights for a versatile workspace.
           </p>
-          <img src="./assets/images/landing-image-2.png" alt="desk1" class="zoom-image" />
+          <img src="./assets/images/landing-image-2.png" alt="desk1" class="zoom-image">
         </div>
       </section>
       <section id="services">
@@ -174,15 +173,45 @@
           <p>
             Sign up for our email newsletter and receive exclusive benefits.
           </p>
-          <form class="email-box">
-            <input type="email" required>
+          <form class="email-box" action="mailto:pkh2662003@gmail.com">
+            <input type="email" required placeholder="Enter your Email">
             <button class="btn" type="submit">Subscribe</button>
-          </div>
+          </form>
       </section>
+      <div id="discount-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Exclusive Discount!</h2>
+          <p>Use code <strong>PKH26</strong> at checkout to get 20% off your purchase.</p>
+          <button class="apply-code">Apply Code</button>
+        </div>
+      </div>      
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#footer">Privacy Policy</a></li>
+            <li><a href="#footer">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      
+        <div class="row">
+          PKH Copyright © 2024 PKH - All rights reserved || Designed By: Phone Khaing
+          Hein
+        </div>
+      </div>      
+    </footer>
     <script src="./assets/js/nav.js"></script>
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/footer.js"></script>
   </body>
 </html>
